@@ -1,4 +1,4 @@
-// Portgues
+// Português
  
 Site para divulgar Canal de Nacho AoE.
 
