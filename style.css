@@ -1,0 +1,226 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+html,
+body {
+    height: 100%;
+    margin:0px;
+    font-family: "Euclid Circular A", sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #111111;
+    display: grid;
+    place-items: center;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* General styles end*/
+.container {
+    max-width: 110rem;
+    padding: 1.5rem;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1.5rem;
+}
+.card {
+    background: #262525;
+    color: #fff;
+    padding: 1.5rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+}
+.card-title-large {
+    font-family: fantasy, sans-serif;
+    font-size: 10rem;
+    letter-spacing: 0.5rem;
+    color: #1d1d1d;
+    user-select: none;
+    transform: translateX(7rem);
+    transition: transform 2.5s;
+}
+.card-title-small {
+    margin-bottom: 1rem;;
+}
+.card-description {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.card-cta {
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+}
+.card:hover .card-cta {
+    background-color: #262525;
+
+}
+.card:hover .card-title-large {
+    transform: translateX(-115%);
+    color: #fff;
+}
+.card.twitter:hover {
+    background-color: #1da1f2;
+}
+.card.instagram:hover {
+    background: radial-gradient(
+            at 20% 128%,
+            #feda78 20%,
+            #e23467 60%,
+            #ac2bb3 90%
+    );
+}
+.card.twitch:hover {
+    background-color: #6441a5;
+}
+.card.youtube:hover {
+    background-color: #ff074f;
+    }
+
+/* Banner */
+
+section {
+    padding: 30px 15%;
+}
+@media (width <= 720px) {
+    section {padding: 30px 10%}
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap:50px;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 40vw;
+    margin-bottom: 40px;
+}
+
+@media (width <= 620px) {
+    .banner {
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
+
+
+
+section {
+    padding: 30px 15%;
+}
+
+@media (width <= 720px) {
+    section {
+        padding: 30px 10%;
+    }
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 40vw;
+    margin-bottom: 40px;
+}
+
+@media (width <= 620px) {
+    .banner {
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 200%;
+    height: 110%;
+    background: #1b1526;
+}
+
+.banner h2 {
+    white-space: nowrap;
+    margin: 0 0 4px;
+    font-size: 40px;
+    color: rgb(255 255 255 / 96%);
+}
+
+.banner h3 {
+    font-weight: 400;
+    margin: 0;
+    color: rgb(255 255 255 / 57%);
+}
+
+@keyframes morph {
+    0%,
+    100% {
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    34% {
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+}
+
+.banner img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    animation: morph 7s linear infinite;
+}
+
+/* Campeonatos */
+
+.Camps {
+    font-family: "Trebuchet MS",sans-serif;
+    font-size: large;
+}
+
+.Camps a:hover{
+    color: cornflowerblue;
+}
+
+table{
+    border-collapse:collapse;
+    width:100%;
+    border-color: black;
+}
+
+
+td, th {
+    border:1px solid white;
+    text-align:center;
+    padding:6px;
+
+}
